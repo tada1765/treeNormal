@@ -4,8 +4,8 @@
 #include <stdlib.h>
 // normal tree, recursion not apply: PreOrder
 /*
- *		 1
- *		/ \
+ *		   1
+ *		  / \
  *	   2   3
  *	  / \ / \
  *	 4  5 6  7
@@ -32,7 +32,7 @@ DynArrayStack *CreateStack();
 int Top( DynArrayStack *S);
 void DoubleStack( DynArrayStack *S);
 void DeleteStack(DynArrayStack *S);
-void PreOrder(BinaryTreeNode *root);
+int * PreOrder(BinaryTreeNode *root);
 BinaryTreeNode*  createNode(int data);
 
 #endif // _TREENORMAL_H
